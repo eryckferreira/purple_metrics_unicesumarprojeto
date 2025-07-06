@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Purple Metrics</title>
+    <link rel="icon" href="./img/logo purple/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <div class="login-container">
+        <div class="branding-result-text">
+            <h1>Branding gera resultado.</h1>
+            <h2>Juntos podemos provar isso.</h2>
+        </div>
+        <div class="form-container">
+            <img src="./img/logo_purple metrics.png" alt="" class="login">
+            <form action="">
+                <label for="">Email</label>
+                <input
+                type="text"
+                name=""
+                id=""
+                placeholder="usuário@gmail.com"
+                required>
+                <label for="">Sua senha</label>
+                <input
+                type="password"
+                name=""
+                id=""
+                placeholder="senha"
+                required>
+                <button type="button">Conecte-se</button>
+                <h3>2025 © todos os direitos reservados</h3>
+            </form>
+        </div>
+    </div>
+    <script>
+        document.querySelector("button").addEventListener("click", function () {
+        const inputs = document.querySelectorAll("input");
+        const emailInput = inputs[0];
+        const passwordInput = inputs[1];
+        let isValid = true;
+
+        // Validação do e-mail
+        if (!emailInput.value.trim() || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailInput.value)) {
+            markInvalid(emailInput);
+            isValid = false;
+        } else {
+            markValid(emailInput);
+        }
+
+        // Validação da senha
+        if (!passwordInput.value.trim()) {
+            markInvalid(passwordInput);
+            isValid = false;
+        } else {
+            markValid(passwordInput);
+        }
+
+        // Se tudo estiver válido, simula login
+        if (isValid) {
+            const button = document.querySelector("button");
+            button.disabled = true;
+            button.innerHTML = "Conectando... 🔄";
+
+            setTimeout(() => {
+            button.innerHTML = "Login realizado! ✅";
+            button.style.background = "#4CAF50";
+            }, 1500);
+        }
+        });
+
+        function markInvalid(el) {
+        el.style.borderColor = "crimson";
+        }
+
+        function markValid(el) {
+        el.style.borderColor = "mediumseagreen";
+        }
+    </script>
+</body>
+</html>

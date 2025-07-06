@@ -1,0 +1,397 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f4f3ee;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+
+nav.nav-glass {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 12px 30px;
+  border-radius: 20px;
+  width: 65%;
+  margin: 30px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.logo {
+  flex: 1;
+}
+
+.logo img {
+  height: 42px;
+  object-fit: contain;
+}
+
+.nav-list {
+  flex: 3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 30px;
+}
+
+.nav-list li:not(.logo) {
+  margin: 0;
+}
+
+.nav-list a {
+  color: rgba(62, 31, 71, 1);
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15.5px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-list a:hover {
+  color: rgba(62, 31, 71, 0.705);
+  transform: translateY(-2px);
+}
+
+/* Sou cliente */
+
+.client-nav {
+  background: linear-gradient(135deg, #3e1f47, #7a3fa1);
+  color: #fff !important; /* ← força o branco mesmo dentro do <a> */
+  padding: 8px 18px;
+  border-radius: 8px;
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(62, 31, 71, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  display: inline-block;
+}
+
+.client-nav:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(62, 31, 71, 0.4);
+}
+
+/* hero section science */
+
+.hero-section-science {
+  background-color: #f4f3ee;
+  padding: 0px 170px 40px; /* topo ainda mais reduzido */
+  color: #3e1f47;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center; /* centraliza verticalmente */
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.hero-text {
+  flex: 1 1 60%;
+  max-width: 700px;
+}
+
+.hero-text h1 {
+  font-size: 4em;
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+
+.hero-text p {
+  font-size: 1.5em;
+  line-height: 1.2;
+}
+
+.hero-image {
+  flex: 1 1 35%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.hero-image img {
+  height: 800px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* SECTION DA CIÊNCIA */
+
+/* Estilo geral da seção */
+.section-science-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 40px;
+  padding: 60px;
+  color: #3e1f47;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Estilo de cada bloco */
+.section-science-items > div {
+  border-radius: 12px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section-science-items > div:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(62, 31, 71, 0.12);
+}
+
+/* Imagens */
+.section-science-items img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Títulos */
+.section-science-items h2 {
+  font-size: 1.4em;
+  font-weight: 700;
+  color: #3e1f47;
+}
+
+/* Parágrafos */
+.section-science-items p {
+  font-size: 1em;
+  line-height: 1.6;
+  color: #4a3a50;
+}
+
+/* Citação no topo */
+section > h2 {
+  font-size: 1.6em;
+  font-weight: 500;
+  font-style: italic;
+  text-align: center;
+  max-width: 900px;
+  margin: 60px auto 20px;
+  color: #3e1f47;
+}
+
+/* Footer Sobre nós */
+
+/* Rodapé geral */
+footer {
+  background-color: rgb(62, 31, 71);
+  color: #f4f3ee;
+  padding: 40px 60px;
+}
+
+/* Container para dividir esquerda e direita */
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+/* Lado esquerdo: logo + parágrafo */
+.footer-left {
+  flex: 1 1 60%;
+  min-width: 300px;
+}
+
+.img-footer img {
+  max-width: 180px;
+  height: auto;
+}
+
+footer p {
+  padding-top: 20px;
+  line-height: 1.6;
+  font-size: 18px;
+}
+
+/* Lado direito: título + ícones */
+.footer-socialmidia {
+  flex: 1 1 30%;
+  min-width: 200px;
+  text-align: right;
+}
+
+.footer-socialmidia h1 {
+  font-size: 27.6px;
+  margin-bottom: 12px;
+  white-space: nowrap;
+}
+
+/* Container dos ícones */
+.icon-socialmidia {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+/* Estilo dos ícones */
+.icon-socialmidia a img {
+  width: 40px; /* 30px + 15% */
+  opacity: 0.7;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.icon-socialmidia a:hover img {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+/* ============================
+   RESPONSIVIDADE
+============================ */
+
+/* Telas até 1024px */
+@media (max-width: 1024px) {
+  nav.nav-glass {
+    width: 90%;
+    flex-wrap: wrap;
+    padding: 16px;
+  }
+
+  .nav-list {
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .hero-section-science {
+    padding: 40px 60px;
+  }
+
+  .hero-text h1 {
+    font-size: 3em;
+  }
+
+  .hero-text p {
+    font-size: 1.3em;
+  }
+
+  .hero-image img {
+    height: 500px;
+  }
+
+  section > h2 {
+    font-size: 1.4em;
+    padding: 0 20px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .footer-socialmidia {
+    text-align: center;
+  }
+
+  .icon-socialmidia {
+    justify-content: center;
+  }
+}
+
+/* Telas até 768px */
+@media (max-width: 768px) {
+  .hero-section-science {
+    padding: 30px 30px;
+  }
+
+  .hero-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 2.2em;
+  }
+
+  .hero-text p {
+    font-size: 1.1em;
+  }
+
+  .hero-image {
+    justify-content: center;
+  }
+
+  .hero-image img {
+    height: 400px;
+  }
+
+  .section-science-items {
+    padding: 40px 20px;
+    gap: 30px;
+  }
+
+  section > h2 {
+    font-size: 1.2em;
+    padding: 0 16px;
+  }
+
+  footer p {
+    font-size: 16px;
+  }
+
+  .footer-socialmidia h1 {
+    font-size: 22px;
+  }
+
+  .icon-socialmidia a img {
+    width: 36px;
+  }
+}
+
+/* ============================
+   EXTRA SMALL DEVICES (até 576px)
+   Navegação vertical empilhada
+============================ */
+@media (max-width: 576px) {
+  nav.nav-glass {
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+    padding: 16px;
+    border-radius: 12px;
+    margin: 16px auto;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+  }
+
+  .nav-list li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-list a {
+    font-size: 15px;
+    display: inline-block;
+  }
+
+  .client-nav {
+    margin-top: 8px;
+    width: auto;
+  }
+}

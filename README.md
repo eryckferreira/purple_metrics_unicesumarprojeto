@@ -1,0 +1,1 @@
+## Projeto feito com muito cuidado, e muito atento aos detalhes, Purple Metrics tem como CEO a Guta Tolmasquim, no qual acompanho no Linkedin. Vale dizer que serviu como inspiração para fazer o projeto da faculdade em matéria de front-end.

@@ -16,9 +16,8 @@ Estilo	CSS3
 Interatividade	JavaScript (ES6+)
 
 📁 Organização do Projeto
-plaintext
 PurpleMetrics/
-├── index.html        # Página principal
-├── style.css         # Estilos personalizados
-├── script.js         # Funcionalidades JS (scroll, animações, etc.)
-└── assets/           # Imagens, ícones e 
+index.html        # Página principal
+style.css         # Estilos personalizados
+script.js         # Funcionalidades JS (scroll, animações, etc.)
+assets/           # Imagens, ícones e 

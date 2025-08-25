@@ -19,13 +19,13 @@ Interatividade	JavaScript (ES6+)
 PurpleMetrics/
 
 index.html        
-# Página principal
+Página principal
 
 style.css
-# Estilos personalizados
+Estilos personalizados
 
 script.js
-# Funcionalidades JS (scroll, animações, etc.)
+Funcionalidades JS (scroll, animações, etc.)
 
 assets/
-# Imagens, ícones e 
+Imagens e ícones
